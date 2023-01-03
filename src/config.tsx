@@ -1,7 +1,8 @@
 import Head from 'next/head'
 
-const titleDefault = 'Messie - Freelance frontend developer'
-const description = "Projects i've been involved through and some of my experiments"
+const titleDefault = 'Messie - Independent Frontend Developer'
+const description =
+  'Messie is a Frontend Developer based in France. After about 3 years spent building web apps and a few months  learning motion, webgl and 3d rendering on the web, he switched his focus on project allowing to follow his passion for motion and 3d rendering'
 const author = 'Messie NUNGI-PAMBU'
 
 export default function Header({ title = titleDefault }) {

@@ -9,10 +9,12 @@ const withPWA = require('next-pwa')({
 
 const nextConfig = {
   // uncomment the following snippet if using styled components
-  // compiler: {
-  //   styledComponents: true,
-  // },
-  experimental: {},
+  compiler: {
+    styledComponents: true,
+  },
+  experimental: {
+    fontLoaders: [{ loader: '@next/font/google', options: { subsets: ['latin'] } }],
+  },
   images: {},
   reactStrictMode: true, // Recommended for the `pages` directory, default in `app`.
   webpack(config, { isServer }) {
@@ -49,7 +51,7 @@ const nextConfig = {
 // manage i18n
 if (process.env.EXPORT !== 'true') {
   nextConfig.i18n = {
-    locales: ['en', 'jp'],
+    locales: ['en', 'fr'],
     defaultLocale: 'en',
   }
 }

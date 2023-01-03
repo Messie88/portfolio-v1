@@ -1,19 +1,15 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+html,
+body,
+#__next {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+}
 
-@layer base {
-  * {
-    box-sizing: border-box;
-  }
-  
-  html,
-  body,
-  #__next {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  }
+h3 {
+  font-family: 'Aquarium';
+  margin: 0;
 }
